@@ -8,21 +8,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/gerar.css">
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/gerar.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="fb-root"></div>
 
     <div class="container">
-        <h1>Joel Ipsum - <small>Iu uanti random téxti cara?</small></h1>
+        <h1>Joel Ipsum - <small>Iu uanti random téxti cara? Nóu iú révi!</small></h1>
         <div class="row">
             <div class="span8">
                 <div class="hero-unit">
                     <p>Este é um gerador de texto randômico baseado no incomparável inglês do Joel Santana</p>
-                    <p>
-                        <a href="http://j.mp/167QSfu" target="_blank" class="btn btn-primary btn-large">
-                            Sugira frases para o Joel Ipsum
-                        </a>
-                    </p>
+					<form class="form-horizontal" id="gera">
+						<fieldset>
+
+						<!-- Form Name -->
+						<legend>Gere seu texto</legend>
+
+						<!-- Text input-->
+						<div class="control-group">
+						  <label class="control-label" for="q">Quantidade de parágrafos</label>
+						  <div class="controls">
+							<input id="q" name="q" type="number" value="3" class="input-xlarge" required="">
+							
+						  </div>
+						</div>
+
+						<!-- Button -->
+						<div class="control-group">
+						  <label class="control-label" for="submit"></label>
+						  <div class="controls">
+							<button type="submit" id="submit" name="submit" class="btn btn-primary">Gerar</button>
+							<button type="button" id="copiar" name="copiar" class="btn btn-secondary">Selecionar texto</button>
+						  </div>
+						</div>
+
+						</fieldset>
+					</form>
+					
+					<div id="result" class="lead"></div>
                 </div>
                 <p>Shéri me uiti your friends</p>
                 <div class="g-plusone" data-size="medium" data-href="http://www.joel-ipsum.com/"></div>
@@ -31,33 +58,12 @@
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
                 <div class="fb-like" data-href="https://www.facebook.com/pages/Joel-Ipsum/233246663500496" data-width="300" data-layout="button_count" data-show-faces="true" data-send="true"></div>
-
-                <h2>1 - Paraguéf</h2>
-                <p>You tá the brinqueichon uite me, cara? You ar a véri mutchi caspa man. Do you nou the number one xampu contra caspa in the uordi. Luqui aqui Capitachion. Rimouve uarandredi porcenti ofi the caspa ande idrateiti ior hair.</p>
-
-                <h2>2 - Paraguéfis</h2>
-                
-                <p>You tá the brinqueichon uite me, cara? You ar a véri mutchi caspa man. Do you nou the number one xampu contra caspa in the uordi. Luqui aqui Capitachion. Rimouve uarandredi porcenti ofi the caspa ande idrateiti ior hair.</p>
-
-                <p>You puti the xampu in the midiu, from the fronte, from the berrind ande the caspa donti cai io xolder. Pliss, luqui tu me. Not joelzetes. Finixi the cocereichon in the red. Bati, pera ai, you no precisa, you ar a carecaition, you donti révi caspa</p>
-                
-                <h2>3 - Paraguéfis</h2>
-
-                <p>You tá the brinqueichon uite me, cara? You ar a véri mutchi caspa man. Do you nou the number one xampu contra caspa in the uordi. Luqui aqui Capitachion. Rimouve uarandredi porcenti ofi the caspa ande idrateiti ior hair.</p>
-
-                <p>You puti the xampu in the midiu, from the fronte, from the berrind ande the caspa donti cai io xolder. Pliss, luqui tu me. Not joelzetes. Finixi the cocereichon in the red. Bati, pera ai, you no precisa, you ar a carecaition, you donti révi caspa</p>
-
-                <p>Tu teami prei veri gudi! From birráind, from de léfiti, from de raiti! My equipe pray veri naici. Iraq ande sal de Africa pray semen. But de second taime ai hevi de mete. Control de mete bai equipe praying de left de write in the midiu.</p>
-
-                <h2>4 - Paraguéfis</h2>
-
-                <p>You tá the brinqueichon uite me, cara? You ar a véri mutchi caspa man. Do you nou the number one xampu contra caspa in the uordi. Luqui aqui Capitachion. Rimouve uarandredi porcenti ofi the caspa ande idrateiti ior hair.</p>
-
-                <p>You puti the xampu in the midiu, from the fronte, from the berrind ande the caspa donti cai io xolder. Pliss, luqui tu me. Not joelzetes. Finixi the cocereichon in the red. Bati, pera ai, you no precisa, you ar a carecaition, you donti révi caspa</p>
-
-                <p>Tu teami prei veri gudi! From birráind, from de léfiti, from de raiti! My equipe pray veri naici. Iraq ande sal de Africa pray semen. But de second taime ai hevi de mete. Control de mete bai equipe praying de left de write in the midiu.</p>
-
-                <p>Have on bext oportuniti four ixcore. Iraq marquee de midiu found berrind. I afte-dem in seconde time ai maique to chanjer. Uon prayer experience sempre maschego. I anoder prayer que hevi eperience. Qui pray very gude Steven pienar. but ai donti "bidebu"</p>
+				<hr />
+				<p>
+					<a href="http://j.mp/167QSfu" target="_blank" class="btn btn-primary btn-large">
+						Sugira frases para o Joel Ipsum
+					</a>
+				</p>
             </div>
 
             <div class="span4">
@@ -89,7 +95,7 @@
 
         <div class="row">
             <div class="span12">
-                Por <a href="http://twitter.com/felquis">Felquis Gimenes</a> e <a href="http://twitter.com/gfelizola">Gustavo Felizola</a>
+                Por <a href="http://twitter.com/felquis">Felquis Gimenes</a>, <a href="http://twitter.com/gfelizola">Gustavo Felizola</a> e <a href="http://fb.com/jesobreira">Jefrey Santos</a>
             </div>
         </div>
 
